@@ -1,9 +1,5 @@
 version: 0.2
 phases:
-  install: # Install AWS cli, kubectl (needed for Helm) and Helm
-    commands:
-       - sudo apt-get install git
-
   pre_build: # Add kubeconfig to access to EKS cluster
     commands:
       - "mkdir ~/.kube/"
