@@ -2,6 +2,7 @@ version: 0.2
 phases:
   install: # Install AWS cli, kubectl (needed for Helm) and Helm
     commands:
+       - echo "Ankit"
        - sudo apt-get install python-pip
        - sudo apt-get install -y awscli 
        - sudo apt-get install -y git
